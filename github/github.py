@@ -10,8 +10,6 @@ gitdatas = soup.find('div',id="user-repositories-list").find_all('li', class_="c
 for repo in gitdatas:
 
     repo_name = repo.find('a', itemprop= "name codeRepository").get_text(strip = True)
-    details = repo.find()
-     
 
     print(repo_name)
   
