@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import openpyxl
 
-
-
 try:
     
     excel = openpyxl.Workbook()
@@ -19,7 +17,7 @@ try:
 
     movies = soup.find('tbody', class_ = 'lister-list').find_all('tr')       #first we need to filter our needed data from raw html content      
 
-    # print(len(movies))    #                                                #250 because there are 250 list in it.
+    # print(len(movies))                                                     #250 because there are 250 list in it.
 
     for movie in movies:
 
